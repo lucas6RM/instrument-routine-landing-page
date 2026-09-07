@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://lucas6rm.github.io',
+	base: '/instrument-routine-landing-page',
 	integrations: [
 		starlight({
 			title: 'Instrument Routine',
