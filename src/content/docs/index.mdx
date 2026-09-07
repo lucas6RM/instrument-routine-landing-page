@@ -1,0 +1,91 @@
+---
+title: Instrument Routine
+description: Plan your daily practice, stay focused, and follow your progress.
+template: splash
+hero:
+  tagline: A focused daily practice companion for musicians.
+  actions:
+    - text: Explore the app
+      link: '#features'
+      icon: right-arrow
+    - text: Get support
+      link: '#support'
+      variant: minimal
+---
+
+import { Image } from 'astro:assets';
+import today from '../../assets/screenshots/today.png';
+import timer from '../../assets/screenshots/timer.png';
+import metronome from '../../assets/screenshots/metronome.png';
+import statistics from '../../assets/screenshots/statistics.png';
+
+<section class="feature-heading" id="features">
+  <p class="eyebrow">Made for steady practice</p>
+  <h2>Your routine, from first note to weekly review.</h2>
+</section>
+
+<div class="feature-list">
+  <section class="feature-row">
+    <div class="feature-copy">
+      <p class="feature-number">01</p>
+      <h2>Plan today’s practice</h2>
+      <p>Keep one ordered routine, set a duration and daily attempt target for each exercise, and see what remains at a glance.</p>
+    </div>
+    <div class="screenshot-frame">
+      <Image src={today} alt="Today view showing a daily exercise routine and its progress" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
+    </div>
+  </section>
+
+  <section class="feature-row feature-row-reverse">
+    <div class="feature-copy">
+      <p class="feature-number">02</p>
+      <h2>Stay focused</h2>
+      <p>Run a dedicated countdown for the current exercise. Completed attempts are recorded automatically in your daily practice.</p>
+    </div>
+    <div class="screenshot-frame">
+      <Image src={timer} alt="Practice timer counting down the current exercise" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
+    </div>
+  </section>
+
+  <section class="feature-row">
+    <div class="feature-copy">
+      <p class="feature-number">03</p>
+      <h2>Keep time your way</h2>
+      <p>Use the built-in metronome, tap in a tempo, shape the beat cycle, and adjust click and accent sounds independently.</p>
+    </div>
+    <div class="screenshot-frame">
+      <Image src={metronome} alt="Metronome view with tempo and beat controls" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
+    </div>
+  </section>
+
+  <section class="feature-row feature-row-reverse">
+    <div class="feature-copy">
+      <p class="feature-number">04</p>
+      <h2>See your consistency</h2>
+      <p>Review weekly practice time, exercise totals, completion rate, and a concise annual summary.</p>
+    </div>
+    <div class="screenshot-frame">
+      <Image src={statistics} alt="Weekly statistics view with practice totals and completion rate" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
+    </div>
+  </section>
+</div>
+
+<section class="privacy-callout">
+  <p class="eyebrow">Private by design</p>
+  <h2>Your practice stays on your device.</h2>
+  <p>No account, advertising, analytics, or tracking.</p>
+</section>
+
+<section class="support" id="support">
+  <div>
+    <p class="eyebrow">Support</p>
+    <h2>Need help?</h2>
+    <p>Questions and feedback are welcome.</p>
+  </div>
+  <a class="support-link" href="mailto:lucas-mercier@hotmail.fr">Contact support</a>
+</section>
+
+<nav class="legal-links" aria-label="Legal">
+  <a href="privacy-policy/">Privacy Policy</a>
+  <a href="terms-of-use/">Terms of Use</a>
+</nav>
