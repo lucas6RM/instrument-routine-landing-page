@@ -1,9 +1,9 @@
 ---
 title: Instrument Routine
-description: Organisez votre pratique quotidienne, restez concentré et suivez vos progrès.
+description: Choisissez vos exercices, pratiquez-les chaque jour et adaptez votre routine pour progresser.
 template: splash
 hero:
-  tagline: Un compagnon de pratique quotidienne conçu pour les musiciens.
+  tagline: Choisissez vos exercices, pratiquez-les chaque jour et adaptez votre routine pour progresser.
   actions:
     - text: Découvrir l’app
       link: '#features'
@@ -14,22 +14,23 @@ hero:
 ---
 
 import { Image } from 'astro:assets';
-import today from '../../../assets/screenshots/today.png';
-import timer from '../../../assets/screenshots/timer.png';
-import metronome from '../../../assets/screenshots/metronome.png';
-import statistics from '../../../assets/screenshots/statistics.png';
+import today from '../../../assets/screenshots/fr/today.png';
+import timer from '../../../assets/screenshots/fr/timer.png';
+import metronome from '../../../assets/screenshots/fr/metronome.png';
+import statistics from '../../../assets/screenshots/fr/statistics.png';
 
 <section class="feature-heading" id="features">
-  <p class="eyebrow">Pour une pratique régulière</p>
-  <h2>Votre routine, de la première note au bilan hebdomadaire.</h2>
+  <p class="eyebrow">Une méthode pour progresser</p>
+  <h2>Chaque séance construit la suivante.</h2>
+  <p class="feature-intro">Créez une routine adaptée à vos objectifs — avec votre professeur si vous en avez un — puis privilégiez la régularité.</p>
 </section>
 
 <div class="feature-list">
   <section class="feature-row">
     <div class="feature-copy">
       <p class="feature-number">01</p>
-      <h2>Organisez votre pratique du jour</h2>
-      <p>Conservez une Routine ordonnée, définissez une durée et un objectif quotidien pour chaque Exercice, puis voyez ce qu’il reste à faire.</p>
+      <h2>Retrouvez votre Séance quotidienne</h2>
+      <p>Chaque jour, retrouvez les Exercices à pratiquer et voyez d’un coup d’œil ce qu’il reste à faire.</p>
     </div>
     <div class="screenshot-frame">
       <Image src={today} alt="Vue Aujourd’hui montrant la Routine et sa progression" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
@@ -39,8 +40,8 @@ import statistics from '../../../assets/screenshots/statistics.png';
   <section class="feature-row feature-row-reverse">
     <div class="feature-copy">
       <p class="feature-number">02</p>
-      <h2>Restez concentré</h2>
-      <p>Lancez un décompte dédié à l’Exercice en cours. Les tentatives terminées sont automatiquement ajoutées à votre pratique quotidienne.</p>
+      <h2>Pratiquez avec le Timer</h2>
+      <p>Lancez le Timer d’un Exercice pour rester concentré et créditer automatiquement votre temps de pratique.</p>
     </div>
     <div class="screenshot-frame">
       <Image src={timer} alt="Timer de pratique décomptant l’Exercice en cours" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
@@ -50,8 +51,8 @@ import statistics from '../../../assets/screenshots/statistics.png';
   <section class="feature-row">
     <div class="feature-copy">
       <p class="feature-number">03</p>
-      <h2>Gardez votre propre tempo</h2>
-      <p>Utilisez le Métronome intégré, réglez le tempo au tap, composez le cycle de Beats et ajustez séparément les sons de Click et d’Accent.</p>
+      <h2>Pratiquez avec le Métronome</h2>
+      <p>Paramétrez le Métronome à votre convenance et pilotez-le directement depuis l’écran Timer.</p>
     </div>
     <div class="screenshot-frame">
       <Image src={metronome} alt="Métronome avec les contrôles de tempo et de Beats" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
@@ -61,8 +62,8 @@ import statistics from '../../../assets/screenshots/statistics.png';
   <section class="feature-row feature-row-reverse">
     <div class="feature-copy">
       <p class="feature-number">04</p>
-      <h2>Suivez votre régularité</h2>
-      <p>Consultez le temps de pratique hebdomadaire, le total par Exercice, le taux de réalisation et un résumé annuel concis.</p>
+      <h2>Suivez votre Historique</h2>
+      <p>Consultez vos statistiques de pratique, mesurez votre régularité et dépassez les 100 %.</p>
     </div>
     <div class="screenshot-frame">
       <Image src={statistics} alt="Statistiques hebdomadaires avec le temps pratiqué et le taux de réalisation" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />

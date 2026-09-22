@@ -1,9 +1,9 @@
 ---
 title: Instrument Routine
-description: Plan your daily practice, stay focused, and follow your progress.
+description: Choose your exercises, practice them every day, and adapt your routine to make progress.
 template: splash
 hero:
-  tagline: A focused daily practice companion for musicians.
+  tagline: Choose your exercises, practice them every day, and adapt your routine to make progress.
   actions:
     - text: Explore the app
       link: '#features'
@@ -14,22 +14,23 @@ hero:
 ---
 
 import { Image } from 'astro:assets';
-import today from '../../assets/screenshots/today.png';
-import timer from '../../assets/screenshots/timer.png';
-import metronome from '../../assets/screenshots/metronome.png';
-import statistics from '../../assets/screenshots/statistics.png';
+import today from '../../assets/screenshots/en/today.png';
+import timer from '../../assets/screenshots/en/timer.png';
+import metronome from '../../assets/screenshots/en/metronome.png';
+import statistics from '../../assets/screenshots/en/statistics.png';
 
 <section class="feature-heading" id="features">
-  <p class="eyebrow">Made for steady practice</p>
-  <h2>Your routine, from first note to weekly review.</h2>
+  <p class="eyebrow">A method for progress</p>
+  <h2>Each session builds on the previous one.</h2>
+  <p class="feature-intro">Create a routine tailored to your goals—with your teacher if you have one—then prioritize consistency.</p>
 </section>
 
 <div class="feature-list">
   <section class="feature-row">
     <div class="feature-copy">
       <p class="feature-number">01</p>
-      <h2>Plan today’s practice</h2>
-      <p>Keep one ordered routine, set a duration and daily attempt target for each exercise, and see what remains at a glance.</p>
+      <h2>Find your Daily Practice Session</h2>
+      <p>Each day, find the Exercises you need to practice and see what remains at a glance.</p>
     </div>
     <div class="screenshot-frame">
       <Image src={today} alt="Today view showing a daily exercise routine and its progress" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
@@ -39,8 +40,8 @@ import statistics from '../../assets/screenshots/statistics.png';
   <section class="feature-row feature-row-reverse">
     <div class="feature-copy">
       <p class="feature-number">02</p>
-      <h2>Stay focused</h2>
-      <p>Run a dedicated countdown for the current exercise. Completed attempts are recorded automatically in your daily practice.</p>
+      <h2>Practice with the Timer</h2>
+      <p>Start an Exercise Timer to stay focused and automatically credit your practice time.</p>
     </div>
     <div class="screenshot-frame">
       <Image src={timer} alt="Practice timer counting down the current exercise" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
@@ -50,8 +51,8 @@ import statistics from '../../assets/screenshots/statistics.png';
   <section class="feature-row">
     <div class="feature-copy">
       <p class="feature-number">03</p>
-      <h2>Keep time your way</h2>
-      <p>Use the built-in metronome, tap in a tempo, shape the beat cycle, and adjust click and accent sounds independently.</p>
+      <h2>Practice with the Metronome</h2>
+      <p>Set up the Metronome to suit you and control it directly from the Timer screen.</p>
     </div>
     <div class="screenshot-frame">
       <Image src={metronome} alt="Metronome view with tempo and beat controls" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
@@ -61,8 +62,8 @@ import statistics from '../../assets/screenshots/statistics.png';
   <section class="feature-row feature-row-reverse">
     <div class="feature-copy">
       <p class="feature-number">04</p>
-      <h2>See your consistency</h2>
-      <p>Review weekly practice time, exercise totals, completion rate, and a concise annual summary.</p>
+      <h2>Track your Progress</h2>
+      <p>View your practice statistics, measure your consistency, and go beyond 100%.</p>
     </div>
     <div class="screenshot-frame">
       <Image src={statistics} alt="Weekly statistics view with practice totals and completion rate" format="webp" widths={[360, 540]} sizes="(max-width: 50rem) 78vw, 21rem" />
